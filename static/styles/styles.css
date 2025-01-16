@@ -1,0 +1,195 @@
+/*=========== Colors ===========*/
+/*=========== Global Styles ===========*/
+/* Body Styles */
+body {
+  background-color: #0D0714;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=========== Layout ===========*/
+/* Block: Main */
+.main {
+  background-color: #1D1825;
+  width: 580px;
+  max-width: 580px;
+  max-height: 580px;
+  padding: 50px 65px;
+  border-radius: 20px;
+  overflow: scroll;
+}
+@media screen and (max-width: 575px) {
+  .main {
+    padding: 40px 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main {
+    padding: 32px 32px;
+  }
+}
+.main__title {
+  color: #78CFB0;
+}
+@media screen and (max-width: 425px) {
+  .main__title {
+    font-size: 26px;
+  }
+}
+.main__header {
+  margin-bottom: 40px;
+}
+.main__no-tasks {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+@media screen and (max-width: 575px) {
+  .main__no-tasks {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main__no-tasks {
+    font-size: 16px;
+  }
+}
+
+.logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 425px) {
+  .logo-title {
+    margin-right: 16vw;
+  }
+}
+
+.flask-logo {
+  width: 80px;
+  height: 80px;
+}
+@media screen and (max-width: 425px) {
+  .flask-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/*=========== Form ===========*/
+/* Block: Form */
+.form {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.form__input {
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: transparent;
+  width: 100%;
+  border: 2px solid #9E78CF;
+  border-radius: 10px;
+  padding: 6px 14px;
+}
+.form__input::placeholder {
+  color: #777777;
+}
+.form__button {
+  background-color: #9E78CF;
+  color: #FFFFFF;
+  height: 40px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.form__button:hover {
+  opacity: 0.9;
+}
+
+/*=========== Tasks ===========*/
+/* Block: Tasks */
+.tasks {
+  margin-top: 30px;
+}
+.tasks--completed {
+  color: #78CFB0 !important;
+}
+.tasks__title {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+/*=========== Task ===========*/
+/* Block: Task */
+.task {
+  color: #FFFFFF;
+  background-color: #15101C;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.task:hover {
+  color: #9E78CF;
+  background-color: #0D0714;
+}
+.task--completed {
+  color: #78CFB0;
+  text-decoration: line-through;
+}
+.task--completed:hover {
+  color: #9E78CF;
+}
+.task--completed .task__block-button:first-child {
+  transform: rotate(180deg);
+}
+.task__content {
+  font-size: 16px;
+  margin-right: 20px;
+}
+.task__block {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+@media screen and (max-width: 425px) {
+  .task__block {
+    column-gap: 12px;
+  }
+}
+.task__block-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  padding-block: 4px;
+  color: inherit;
+  cursor: pointer;
+}
+.task__block-button:hover {
+  color: #78CFB0;
+}
+.task__block svg:nth-of-type(1) {
+  width: 18px;
+  height: 18px;
+}
+.task__block svg:nth-of-type(2) {
+  width: 23px;
+  height: 22px;
+}
+
+/*# sourceMappingURL=styles.css.map */
